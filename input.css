@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Signika+Negative&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .list-button {
+    @apply text-lightprime;
+  }
+}
