@@ -21,3 +21,7 @@ If there are issues with my code (which I'm sure there is) feel free to raise an
 ### From build
 
 Coming soon ;)
+
+## Adding media
+
+Open the `media` folder located in the folder where the `main.js` file is. Copy any media you want to be avalible into that folder.
