@@ -8,4 +8,24 @@
   .list-button {
     @apply text-lightprime;
   }
+  .headbar-bttn {
+    @apply text-lightprime;
+    @apply p-4;
+  }
+  :hover {
+    @apply bg-opacity-10;
+  }
+  .head-text {
+    @apply pt-4;
+    @apply text-lightprime;
+    @apply text-3xl;
+  }
+  .sub-text {
+    @apply text-lightprime;
+    @apply text-xl;
+  }
+  .text {
+    @apply text-lightprime;
+    @apply text-lg;
+  }
 }

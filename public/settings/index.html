@@ -2,9 +2,10 @@
 
 <html lang="en">
     <head>
-        <title>Viomedia</title>
-        <link rel="stylesheet" href="./index.css">
+        <title>Settings</title>
+        <link rel="stylesheet" href="../index.css">
         <link rel="shortcut icon" href="#">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
     
     <body class="bg-darkprime">
@@ -24,13 +25,14 @@
                 </div>
             </div>
             
-            <div class="align-bottom flex flex-grow">
-                <div class="px-4 bg-darksecond w-1/5">
-                    <ul id="media-list"></ul>
-                </div>
-
-                <div class="w-4/5" id="media-area">
-                    
+            <div class="align-bottom flex flex-row flex-grow">
+                <div class="pl-16">
+                    <p class="head-text">Set file path to media</p>
+                    <p class="sub-text">Note: file path MUST be in a directory NodeJS can access (ie: your home folder on macOS or Linux or your user directory on Windows). 
+                        <br><br>Example: if my directory was "~/videos/media/example" I would input "videos/media/example"</p>
+                    <label for="pathbox" class="text">File path:</label>
+                    <input type="text" id="pathbox">
+                    <button id="path-submit-button" class="bg-darksecond text-lightprime basis-1/12 border-2 border-lightsecond p-2">Submit</button>
                 </div>
             </div>
         </div>

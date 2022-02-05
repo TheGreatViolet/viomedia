@@ -1,3 +1,5 @@
+import { initMenuBar } from "./functions.js"
+
 var mediaArray
 const mediaList = document.getElementById('media-list')
 
@@ -5,7 +7,7 @@ refreshList()
 
 async function refreshList() {
     const request = new XMLHttpRequest()
-    request.open("GET", '/media/medialist.txt', true)
+    request.open("GET", '/medialist.dat', true)
     request.send()
     
     request.onreadystatechange = () => {
@@ -80,3 +82,5 @@ async function listenOnList() {
 }
 
 document.getElementById("refresh-bttn").addEventListener("click", () => location.reload())
+
+initMenuBar()

@@ -475,6 +475,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(237 242 243 / var(--tw-text-opacity));
 }
 
+.headbar-bttn{
+  --tw-text-opacity: 1;
+  color: rgb(237 242 243 / var(--tw-text-opacity));
+  padding: 1rem;
+}
+
+:hover{
+  --tw-bg-opacity: 0.1;
+}
+
+.head-text{
+  padding-top: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(237 242 243 / var(--tw-text-opacity));
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.sub-text{
+  --tw-text-opacity: 1;
+  color: rgb(237 242 243 / var(--tw-text-opacity));
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text{
+  --tw-text-opacity: 1;
+  color: rgb(237 242 243 / var(--tw-text-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .block{
   display: block;
 }
@@ -491,16 +523,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
-.w-20{
-  width: 5rem;
+.w-1\/5{
+  width: 20%;
+}
+
+.w-4\/5{
+  width: 80%;
 }
 
 .flex-none{
   flex: none;
-}
-
-.shrink-0{
-  flex-shrink: 0;
 }
 
 .flex-grow{
@@ -559,9 +591,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.pl-16{
+  padding-left: 4rem;
 }
 
 .align-top{
