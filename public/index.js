@@ -11,7 +11,7 @@ async function refreshList() {
     request.onreadystatechange = () => {
         if (request.readyState == 4 && request.status == 200) {
             let rawStringData = request.responseText
-            rawStringData = rawStringData.replace(/(?<=,)\s+/g, '')
+            rawStringData = rawStringData.replace(/,\s/g, ',')
             console.log(rawStringData)
             
             mediaArray = rawStringData.split(',')
