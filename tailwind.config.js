@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  content: ["./public/*.{html,js}"],
+  content: ["./public/**/*.{html,js}"],
   theme: {
     colors: {
       lightprime: '#edf2f3',
