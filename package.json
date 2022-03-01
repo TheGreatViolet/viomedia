@@ -1,5 +1,5 @@
 {
-  "name": "viomedia-refactor",
+  "name": "viomedia",
   "private": true,
   "bin": "dist/server/index.js",
   "scripts": {
