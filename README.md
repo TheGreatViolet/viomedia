@@ -6,9 +6,15 @@
 
 If there are issues with my code (which I'm sure there is) feel free to raise an issue. I would greatly appreciate it as it helps me as a programmer.
 
+## Prerequisites
+
+- NodeJS
+
+- Node Package Manager (npm)
+
 ## How to run
 
-### From source
+### From compilation (Production server)
 
 `git clone https://github.com/TheGreatViolet/viomedia.git`
 
@@ -16,11 +22,23 @@ If there are issues with my code (which I'm sure there is) feel free to raise an
 
 `npm install`
 
-`npm run`
+`npm run build`
 
-### From build
+`npm run start:prod`
 
-Coming soon ;)
+### From source (Next dev runtime, not recommended)
+
+`git clone https://github.com/TheGreatViolet/viomedia.git`
+
+`cd viomedia`
+
+`npm install`
+
+`npm run dev`
+
+### From executable
+
+Coming soon still D:
 
 ## How to open
 
