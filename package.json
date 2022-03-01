@@ -1,25 +1,57 @@
 {
-  "name": "viomedia",
-  "version": "2.0.0",
-  "description": "An open-source media server",
-  "main": "main.js",
+  "name": "viomedia-refactor",
+  "private": true,
+  "bin": "dist/server/index.js",
   "scripts": {
-    "tailbuild": "npx tailwindcss -i ./input.css -o ./public/index.css",
-    "run": "node main.js",
-    "test": "npm run tailbuild & npm run run"
+    "dev": "ts-node --project tsconfig.server.json server/index.ts",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:next": "next build",
+    "build": "npm run build:next && npm run build:server",
+    "start:prod": "NODE_ENV=production node dist/server/index.js",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "Violet Hayes",
-  "license": "GPL-3.0",
   "dependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/ip": "^1.1.0",
+    "@types/node-notifier": "^8.0.2",
     "body-parser": "^1.19.1",
-    "cors": "^2.8.5",
+    "buffer": "^6.0.3",
+    "child_process": "^1.0.2",
     "express": "^4.17.2",
     "fs": "^0.0.1-security",
+    "hidefile": "^3.0.0",
     "ip": "^1.1.5",
-    "path": "^0.12.7"
+    "next": "12.0.10",
+    "node-loader": "^2.0.0",
+    "node-notifier": "^10.0.1",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "pkg": "^5.5.2",
+    "process": "^0.11.10",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "concurrently": "^7.0.0",
-    "tailwindcss": "^3.0.14"
+    "@types/hidefile": "^3.0.0",
+    "@types/node": "17.0.16",
+    "@types/react": "17.0.39",
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.10",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.23",
+    "typescript": "4.5.5"
+  },
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "assets": "dist/**/*",
+    "targets": [
+      "latest-linux-x64",
+      "latest-win-x64",
+      "latest-macos-x64"
+    ],
+    "outputPath": "build"
   }
 }
