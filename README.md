@@ -46,8 +46,4 @@ Viomedia will log the address you can access Viomedia on in the console (example
 
 ## How to add media
 
-By default Viomedia has the media directory set to the `media` folder in the root directory of the application if you're running from source. Add media to that directory and refresh your browser window in order to see the changes.
-
-### How to add a custom directory
-
 Click on the `settings` tab at the top of the Viomedia window in your browser. From there you can type a custom path to the directory with your media in it.
