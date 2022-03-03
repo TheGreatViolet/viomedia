@@ -2,7 +2,7 @@ import next, { NextPage } from 'next';
 import React, { useState } from 'react';
 import * as filereader from '../functions/files';
 import { address } from "ip";
-import NavBar from '../components/NavBar/index';
+import { NavBar } from '../components/';
 import Head from 'next/head';
 
 interface Props {

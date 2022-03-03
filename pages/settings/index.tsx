@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import NavBar from "../../components/NavBar";
+import { NavBar } from "../../components/index";
 import React, { SyntheticEvent, useState } from "react";
 import Head from "next/head";
 
@@ -49,7 +49,7 @@ const Index: NextPage = () => {
             <div className="flex flex-col h-screen w-screen">
                 <NavBar></NavBar>
 
-                <div className="align-bottom flex flex-row flex-grow pl-16">
+                <div className="align-bottom flex flex-col flex-grow pl-16">
                     <div>
                         <form onSubmit={submitSettings}>
                             <label className="pt-4 text-lightprime text-3xl">Set a custom file path for your media</label>
@@ -68,12 +68,12 @@ const Index: NextPage = () => {
                         </form>
                     </div>
 
-                    {/* <label className="pt-4 text-lightprime text-3xl">Set a custom file path for your media</label>
-                    <br></br>
-                    <label className="text-lightprime text-xl">Note: Path MUST be a directory that Viomedia can access (ie: your home folder on Linux or MacOS or your user directory on Windows)
-                        <br></br><br></br>Example: If my directory is "~/videos/media/example" then I would input "/videos/media/example</label>
-                    <input type="text" id="" className="ml-2"></input>
-                    <button className="bg-darksecond text-lightprime basis-1/12 border-2 border-lightsecond p-2">Submit</button> */}
+                    <div className="mt-12">
+                        <button className='bg-darksecond text-lightprime basis-1/12 border-2 border-lightsecond p-4'
+                        onClick={() => {document.location = "/about"}}>
+                            GitHub Repo
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
